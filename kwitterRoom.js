@@ -11,8 +11,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-  userName = localStorage.getItem("userName");
+firebase.initializeApp(firebaseConfig);
+
+userName = localStorage.getItem("userName");
 
 document.getElementById("userName").innerHTML = "Bem-vindo(a) " + userName + "!";
 
